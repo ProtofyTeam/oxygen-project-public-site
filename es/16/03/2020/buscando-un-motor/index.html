@@ -15,8 +15,8 @@
 <meta property="og:locale" content="es_ES">
 <meta property="og:image" content="http://oxygen.protofy.xyz/images/buscando-un-motor/material.jpeg">
 <meta property="og:image" content="http://oxygen.protofy.xyz/images/buscando-un-motor/motors.jpeg">
-<meta property="article:published_time" content="2020-03-16T15:39:40.000Z">
-<meta property="article:modified_time" content="2020-03-16T20:37:41.439Z">
+<meta property="article:published_time" content="2020-03-16T15:50:40.000Z">
+<meta property="article:modified_time" content="2020-03-17T11:35:29.845Z">
 <meta property="article:author" content="Protofy.xyz">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://oxygen.protofy.xyz/images/buscando-un-motor/material.jpeg">
@@ -79,6 +79,8 @@
     <span id="actions">
       <ul>
         
+        <li><a class="icon" href="/es/17/03/2020/primer-prototipo-funcional/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
         
         <li><a class="icon" href="/es/15/03/2020/obteniendo-los-requisitos-de-diseno/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
@@ -132,7 +134,7 @@
       
     <div class="postdate">
       
-        <time datetime="2020-03-16T15:39:40.000Z" itemprop="datePublished">16-03-2020</time>
+        <time datetime="2020-03-16T15:50:40.000Z" itemprop="datePublished">16-03-2020</time>
         
       
     </div>
@@ -149,18 +151,24 @@
   <div class="content" itemprop="articleBody">
     <p>Tras los primeros problemas con el motor de microondas, y con medio prototipo montado, debemos rectificar y volver a encontrar materiales. Es momento de hacer de ingenieros: Volvemos a la pizarra!</p>
 <p>Nuestro objetivo es identificar piezas que cualquiera tenga a su alcance. Pensar en objetos muy comunes que tengan piezas valiosas para construir Oxy<strong>GEN</strong> en lugares donde es impensable encontrar componentes electrónicos o impresoras 3d y donde el tiempo será escaso. </p>
-<img src="/images/buscando-un-motor/material.jpeg" width="450">
+<img src="/images/buscando-un-motor/material.jpeg" width="450" alt="Diferentes aparatos eléctricos encima de la mesa">
 
-<p>Uno de los elementos que más nos preocupa es el motor; necesitamos par, pero no es viable construir una gran reductora para cumplir con los requisitos de velocidad, esto nos complica la idea de aprovechar piezas de pequeños electrodomésticos comunes. Empezamos a buscar entre nuestros contactos, hablándoles del reto para ver qué ideas tienen. La gente de <a href="https://zocama.com" target="_blank" rel="noopener">Zocama</a> nos da una pista: usar un motor de limpiaparabrisas. </p>
+<p>Uno de los elementos que más nos preocupa es el motor; necesitamos par, pero no es viable construir una gran reductora para cumplir con los requisitos de velocidad, esto nos complica la idea de aprovechar piezas de pequeños electrodomésticos comunes. Empezamos a buscar entre nuestros contactos, hablándoles del reto para ver qué ideas tienen. La gente de <a href="https://www.zocama.com" target="_blank" rel="noopener">Zocama</a> nos da una pista: usar un motor de limpiaparabrisas. </p>
 <p>Pero Barcelona está en aislamiento. Es difícil pensar ahora en pedir piezas o desmontar un coche. Nos avisan de que alguien tiene un viejo PEUGEOT 504 <strong>Ambulancia</strong> (una bonita casualidad) de los años 70 en un garaje. Consiguen desmontar el limpiaparabrisas y sacar el motor.</p>
-<p><strong>[VIDEO MARC DESMONTANDO LIMPIA]</strong></p>
-<p>Ahora solo falta pensar en algo que nos permita alimentar el motor. Esto es más sencillo, ya que estos motores funcionan a 12V. Un cargador de baterias de coche o una fuente de alimentación de ordenador (tipo ATX) son candidatos perfectos y muy fáciles de conseguir en cualquier sitio. <strong>Parece que el motor del “limpia” se postula como un buen candidato</strong>. </p>
-<p>Por otro lado y con lo aprendido hasta ahora [LINK AL ARTÍCULO ANTERIOR] en la cabeza, hemos desmontado en paralelo minipimers, taladros, etc… para poder tener alternativas a mano.</p>
-<img src="/images/buscando-un-motor/motors.jpeg" width="450">
+<br/> 
+
+<div class="video-container"><iframe src="https://www.youtube.com/embed/r3Oorh5tIIU" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+
+<br/> 
+
+<p>Ahora solo falta pensar en algo que nos permita alimentar el motor. Esto es más sencillo, ya que estos motores funcionan a 12V. Un cargador de baterias de coche o una fuente de alimentación de ordenador (tipo ATX) son candidatos perfectos y muy fáciles de conseguir en cualquier sitio. <strong>Parece que el motor del “limpia” se postula como un buen candidato.</strong></p>
+<p>Por otro lado y con lo aprendido hasta <a href="https://oxygen.protofy.xyz/es/15/03/2020/obteniendo-los-requisitos-de-diseno/">ahora</a> en la cabeza, hemos desmontado en paralelo minipimers, taladros, etc… para poder tener alternativas a mano.</p>
+<img src="/images/buscando-un-motor/motors.jpeg" width="450" alt="Distintos motores encima de la mesa">
 
 <p>En este punto es crítico volver a contactar con un médico: empezamos a tirar de contactos. Algunos médicos que están en cuarentena pero con ganas de ayudar, nos pasan puntos a tener en cuenta. Se puede provocar mucho daño a un paciente introduciendo aire con demasiada presión en su cuerpo. Los márgenes no son muy grandes. El AMBU nos ayuda a superar este reto.</p>
 <p>Otra cosa interesante es que debemos poder ajustar la frecuencia de la respiración de algún modo. El hecho de contar con un motor DC nos facilitará las cosas en este sentido. Por ahora para seguir con la solución para emergencias accesible a todo el mundo, planteamos poder ajustar este parámetro con el diseño mecánico.</p>
-<p>Al final parece que tenemos motor y algunas ideas, como alguien dijo alguna vez: Juntarse es un comienzo. Seguir juntos es un progreso. Trabajar juntos es un éxito.</p>
+<p>Al final parece que tenemos motor y algunas ideas, como alguien dijo alguna vez: <strong>Juntarse es un comienzo. Seguir juntos es un progreso. Trabajar juntos es un éxito</strong>.</p>
 <p>Codazos para todos</p>
 
   </div>
