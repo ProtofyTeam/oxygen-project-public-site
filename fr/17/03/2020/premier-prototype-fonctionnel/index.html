@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang=fr>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Nous travaillons déjà depuis quelques heures déjà et la deuxième itération semble prometteuse. Nous avons de la chance, les moteurs d’essuie-glace ont deux vitesses, ce qui peut simplifier le travail">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Premier prototype fonctionnel">
+<meta property="og:url" content="http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/index.html">
+<meta property="og:site_name" content="OxyGEN">
+<meta property="og:description" content="Nous travaillons déjà depuis quelques heures déjà et la deuxième itération semble prometteuse. Nous avons de la chance, les moteurs d’essuie-glace ont deux vitesses, ce qui peut simplifier le travail">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="http://oxygen.protofy.xyz/fr/images/primer-prototipo/matlab-vs-real.jpeg">
+<meta property="article:published_time" content="2020-03-17T09:50:40.000Z">
+<meta property="article:modified_time" content="2020-03-17T12:52:34.781Z">
+<meta property="article:author" content="Protofy.xyz">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://oxygen.protofy.xyz/fr/images/primer-prototipo/matlab-vs-real.jpeg">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/fr/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/fr/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/fr/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Premier prototype fonctionnel</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/fr/css/style.css">
+
+    <!-- persian styles -->
+    
+      
+<link rel="stylesheet" href="/fr/css/rtl.css">
+
+    
+    <!-- rss -->
+    
+    
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/fr/">Accueil</a></li>
+         
+          <li><a href="/fr/about/">A propos</a></li>
+         
+          <li><a href="/fr/archives/">Articles</a></li>
+         
+          <li><a href="/fr/FAQs/">FAQs</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/fr/16/03/2020/a-la-recherche-un-moteur/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Article précédent</span>
+      <span id="i-next" class="info" style="display:none;">Article suivant</span>
+      <span id="i-top" class="info" style="display:none;">Retour au début</span>
+      <span id="i-share" class="info" style="display:none;">Partager cette article</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/" target="_blank" rel="noopener"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&text=Premier prototype fonctionnel" target="_blank" rel="noopener"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&title=Premier prototype fonctionnel" target="_blank" rel="noopener"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&is_video=false&description=Premier prototype fonctionnel" target="_blank" rel="noopener"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Premier prototype fonctionnel&body=Check out this article: http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&title=Premier prototype fonctionnel" target="_blank" rel="noopener"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&title=Premier prototype fonctionnel" target="_blank" rel="noopener"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&title=Premier prototype fonctionnel" target="_blank" rel="noopener"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&title=Premier prototype fonctionnel" target="_blank" rel="noopener"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&name=Premier prototype fonctionnel&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&t=Premier prototype fonctionnel" target="_blank" rel="noopener"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Premier prototype fonctionnel
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">OxyGEN</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2020-03-17T09:50:40.000Z" itemprop="datePublished">17-03-2020</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>Nous travaillons déjà depuis quelques heures déjà et la deuxième itération semble prometteuse. Nous avons de la chance, les moteurs d’essuie-glace ont deux vitesses, ce qui peut simplifier le travail de calcul de la forme et des dimensions de la came qui appuiera sur le coussin BVM.</p>
+<p>Pour calculer la forme de la came, nous devrons prendre en compte les positions des axes du moteur et de la came ainsi que l’angle d’ouverture provoqué par le BVM. Avec un petit morceau de ruban adhésif, nous avons réussi à compter les tours du moteur, vitesses lente et rapide.</p>
+<p>Finalement, plutot que de faire un engrenage denté compliqué à mécaniser, nous avons décidé de parier sur un jeu de friction ; dans notre cas, ce sont deux disques qui tournent en se frottant sur leurs périphérie. </p>
+<p>Le mode le plus lent du moteur le fair tourner  à 45 tr / min, or la respiration assistée chez un adulte doit être comprise entre <a href="https://es.wikipedia.org/wiki/Ventilación_mecánica" target="_blank" rel="noopener">12 et 20 tr/min</a>. Nous savons donc que le rapport de réduction doit être de 1: 3.</p>
+<p>Nous entrons les nombres dans Matlab et en utilisant cette <a href="https://github.com/ProtofyTeam/OxyGEN/tree/master/Matlab%20Files" target="_blank" rel="noopener">archive git</a>, nous obtenons les dimensions et la forme de la came à découper.</p>
+<img src="/fr/images/primer-prototipo/matlab-vs-real.jpeg" width="450" alt="Capture d’écran à coté des pièces réelles">
+
+<p>Ces petites avancées nous motivent, nous avons effectué les premiers tests avec le design de la came et les engrenages semblent fonctionner, nous arrivons à un peu plus de 15 tr / min. Cela est conforme aux données recueillies auprès des médecins.</p>
+<br/> 
+
+<div class="video-container"><iframe src="https://www.youtube.com/embed/-KeWwQIYlhw" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<br/> 
+
+<p>Nous pouvons publier les premiers éléments de construction détaillés <a href="https://github.com/ProtofyTeam/OxyGEN" target="_blank" rel="noopener">ici</a>, et terminer le premier prototype fonctionnel.</p>
+<p>Il est maintenant temps de faire grandir ce projet, et nous allons essayer de l’ouvrir au maximum de personnes pour que tout le monde puisse travailler à l’améliorer. C’est le début, mais nous sommes convaincus que la route est encore longue. Nous espérons que tout cela inspire les makers souhaitant aider les professionnels de la santé en ces temps difficiles. </p>
+<p>Comme l’a dit le poète: <strong>Caminante, no hay camino. Se hace camino al andar.</strong></p>
+
+  </div>
+</article>
+
+
+<div id="hyvor-talk-view"></div>
+<script type="text/javascript">
+    var HYVOR_TALK_WEBSITE = 308; // DO NOT CHANGE THIS
+    var HYVOR_TALK_CONFIG = {
+        url: false,
+        id: false
+    };
+</script>
+<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/fr/">Accueil</a></li>
+         
+          <li><a href="/fr/about/">A propos</a></li>
+         
+          <li><a href="/fr/archives/">Articles</a></li>
+         
+          <li><a href="/fr/FAQs/">FAQs</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/" target="_blank" rel="noopener"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&text=Premier prototype fonctionnel" target="_blank" rel="noopener"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&title=Premier prototype fonctionnel" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&is_video=false&description=Premier prototype fonctionnel" target="_blank" rel="noopener"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Premier prototype fonctionnel&body=Check out this article: http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&title=Premier prototype fonctionnel" target="_blank" rel="noopener"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&title=Premier prototype fonctionnel" target="_blank" rel="noopener"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&title=Premier prototype fonctionnel" target="_blank" rel="noopener"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&title=Premier prototype fonctionnel" target="_blank" rel="noopener"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&name=Premier prototype fonctionnel&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/&t=Premier prototype fonctionnel" target="_blank" rel="noopener"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> Table des matière</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Partager</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Début</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &hearts; por <a
+      href="https://protofy.xyz">Protofy.xyz</a>
+    2020
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        
+        <li><a href="/fr/">Accueil</a></li>
+        
+        <li><a href="/fr/about/">A propos</a></li>
+        
+        <li><a href="/fr/archives/">Articles</a></li>
+        
+        <li><a href="/fr/FAQs/">FAQs</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+    </div>
+    <!-- styles -->
+
+<link rel="stylesheet" href="/fr/lib/font-awesome/css/all.min.css">
+
+
+<link rel="stylesheet" href="/fr/lib/justified-gallery/css/justifiedGallery.min.css">
+
+
+    <!-- jquery -->
+
+<script src="/fr/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/fr/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+
+<!-- clipboard -->
+
+  
+<script src="/fr/lib/clipboard/clipboard.min.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/fr/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-160765193-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>
