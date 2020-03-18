@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Nous travaillons déjà depuis quelques heures déjà et la deuxième itération semble prometteuse. Nous avons de la chance, les moteurs d’essuie-glace ont deux vitesses, ce qui peut simplifier le travail">
+    <meta name="description" content="Nous travaillons depuis quelques heures déjà et la deuxième itération semble prometteuse. Nous avons de la chance, les moteurs d’essuie-glace ont deux vitesses, ce qui peut simplifier le travail de ca">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Premier prototype fonctionnel">
 <meta property="og:url" content="http://oxygen.protofy.xyz/fr/17/03/2020/premier-prototype-fonctionnel/index.html">
 <meta property="og:site_name" content="OxyGEN">
-<meta property="og:description" content="Nous travaillons déjà depuis quelques heures déjà et la deuxième itération semble prometteuse. Nous avons de la chance, les moteurs d’essuie-glace ont deux vitesses, ce qui peut simplifier le travail">
+<meta property="og:description" content="Nous travaillons depuis quelques heures déjà et la deuxième itération semble prometteuse. Nous avons de la chance, les moteurs d’essuie-glace ont deux vitesses, ce qui peut simplifier le travail de ca">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:image" content="http://oxygen.protofy.xyz/fr/images/primer-prototipo/matlab-vs-real.jpeg">
 <meta property="article:published_time" content="2020-03-17T09:50:40.000Z">
-<meta property="article:modified_time" content="2020-03-17T13:32:22.092Z">
+<meta property="article:modified_time" content="2020-03-18T05:51:20.041Z">
 <meta property="article:author" content="Protofy.xyz">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://oxygen.protofy.xyz/fr/images/primer-prototipo/matlab-vs-real.jpeg">
@@ -77,6 +77,8 @@
     <br/>
     <span id="actions">
       <ul>
+        
+        <li><a class="icon" href="/fr/18/03/2020/conception-de-arbre-a-cames/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
         <li><a class="icon" href="/fr/16/03/2020/a-la-recherche-un-moteur/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
@@ -146,11 +148,11 @@
   
 
   <div class="content" itemprop="articleBody">
-    <p>Nous travaillons déjà depuis quelques heures déjà et la deuxième itération semble prometteuse. Nous avons de la chance, les moteurs d’essuie-glace ont deux vitesses, ce qui peut simplifier le travail de calcul de la forme et des dimensions de la came qui appuiera sur le coussin BVM.</p>
+    <p>Nous travaillons depuis quelques heures déjà et la deuxième itération semble prometteuse. Nous avons de la chance, les moteurs d’essuie-glace ont deux vitesses, ce qui peut simplifier le travail de calcul de la forme et des dimensions de la came qui appuiera sur le coussin BVM.</p>
 <p>Pour calculer la forme de la came, nous devrons prendre en compte les positions des axes du moteur et de la came ainsi que l’angle d’ouverture provoqué par le BVM. Avec un petit morceau de ruban adhésif, nous avons réussi à compter les tours du moteur, vitesses lente et rapide.</p>
 <p>Finalement, plutot que de faire un engrenage denté compliqué à mécaniser, nous avons décidé de parier sur un jeu de friction ; dans notre cas, ce sont deux disques qui tournent en se frottant sur leurs périphérie. </p>
-<p>Le mode le plus lent du moteur le fair tourner  à 45 tr / min, or la respiration assistée chez un adulte doit être comprise entre <a href="https://es.wikipedia.org/wiki/Ventilación_mecánica" target="_blank" rel="noopener">12 et 20 tr/min</a>. Nous savons donc que le rapport de réduction doit être de 1: 3.</p>
-<p>Nous entrons les nombres dans Matlab et en utilisant cette <a href="https://github.com/ProtofyTeam/OxyGEN/tree/master/Matlab%20Files" target="_blank" rel="noopener">archive git</a>, nous obtenons les dimensions et la forme de la came à découper.</p>
+<p>Le mode le plus lent du moteur le fait tourner  à 45 tr / min, or la respiration assistée chez un adulte doit être comprise entre <a href="https://es.wikipedia.org/wiki/Ventilación_mecánica" target="_blank" rel="noopener">12 et 20 tr/min</a>. Nous savons donc que le rapport de réduction doit être de 1: 3.</p>
+<p>Nous entrons ces infos techniques dans le logiciel de calcul  Matlab puis, en utilisant cette <a href="https://github.com/ProtofyTeam/OxyGEN/tree/master/Matlab%20Files" target="_blank" rel="noopener">archive git</a>, nous obtenons les dimensions et la forme de la came à découper.</p>
 <img src="/fr/images/primer-prototipo/matlab-vs-real.jpeg" width="450" alt="Capture d’écran à coté des pièces réelles">
 
 <p>Ces petites avancées nous motivent, nous avons effectué les premiers tests avec le design de la came et les engrenages semblent fonctionner, nous arrivons à un peu plus de 15 tr / min. Cela est conforme aux données recueillies auprès des médecins.</p>
@@ -234,7 +236,20 @@
       href="https://protofy.xyz">Protofy.xyz</a>
     2020
   </div>
+  <div style="float:right">
+     
+      <a href="https://www.instagram.com/oxygen_project_/" target="_blank" rel="noopener"><span class="fab fa-instagram"></span></a>
+     
+      <a href="https://github.com/ProtofyTeam/OxyGEN" target="_blank" rel="noopener"><span class="fab fa-github"></span></a>
+     
+      <a href="https://twitter.com/OxyGEN_Project_" target="_blank" rel="noopener"><span class="fab fa-twitter"></span></a>
+     
+      <a href="https://www.facebook.com/Oxygen-Project-103423307962632" target="_blank" rel="noopener"><span class="fab fa-facebook"></span></a>
+    
+    <a href="mailto:oxygen@protofy.xyz"><span class="fas fa-envelope"></span></a>
+  </div>
   <div class="footer-right">
+    
     <nav>
       <ul>
         
